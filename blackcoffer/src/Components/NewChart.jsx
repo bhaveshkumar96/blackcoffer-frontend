@@ -22,17 +22,34 @@ const NewChart = () => {
         labels: labels,
         datasets: [
           {
-            label: "My First dataset",
-            backgroundColor:"pink",
+            label: "Based on intensity",
+            backgroundColor:"green",
             borderColor: "black",
             data: dataa.map((el)=>{
                 return  el.intensity 
+              }),
+          },
+          {
+            label: "Based on relevance",
+            backgroundColor:"blue",
+            borderColor: "black",
+            data: dataa.map((el)=>{
+                return  el.relevance 
+              }),
+          },
+          {
+            label: "Based on likelihood",
+            backgroundColor:"red",
+            borderColor: "black",
+            data: dataa.map((el)=>{
+                return  el.likelihood 
               }),
           },
         ],
       };
   return (
     <div >
+        <h1 style={{color:"blueviolet"}}>Line Chart Presentation</h1>
         <Line data={Data}/>
     </div>
   )
