@@ -4,6 +4,7 @@ import BubbleChart from "./Components/BubbleChart";
 import DoughtnutChart from "./Components/DoughtnutChart";
 import { Navbar } from "./Components/Navbar";
 import NewChart from "./Components/NewChart";
+import PolarAreaChart from "./Components/PolarAreaChart";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NewChart/>
      <BubbleChart/>
      <DoughtnutChart/>
+     <PolarAreaChart/>
     </div>
   );
 }
