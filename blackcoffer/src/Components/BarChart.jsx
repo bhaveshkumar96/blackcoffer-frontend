@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Bar } from "react-chartjs-2";
+import { Bar, Bubble, Line } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 // import {CategoryScale} from 'chart.js';
 // Chart.register(CategoryScale);
@@ -56,18 +56,27 @@ const BarChart = () => {
   return (
     <div
       style={{
-        width: "50%",
-        border: "1px solid pink",
-        margin: "auto",
+      
         padding: "0px 50px 0px 50px",
         borderRadius: "5%",
+        margin:"auto",
         marginTop: "50px",
+        display:"flex",
+        
       }}
     >
-      <h1 style={{ color: "blueviolet", width: "80%" }}>
-        Bar Chart Presentation
-      </h1>
-      <Bar data={Data} />
+      <div style={{width:"50%"}}>
+        <h1 style={{ color: "blueviolet", width: "40%" }}>
+          Bar Chart Presentation
+        </h1>
+        <Bar data={Data} />
+      </div>
+      <div style={{width:"50%"}}>
+        <h1 style={{ color: "blueviolet", width: "40%" }}>
+          Line Chart Presentation
+        </h1>
+        <Line data={Data} />
+      </div>
     </div>
   );
 };

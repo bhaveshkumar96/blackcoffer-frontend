@@ -13,12 +13,13 @@ function App() {
     <div className="App">
       <Navbar/>
       <BarChart/>
-      <NewChart/>
-     <BubbleChart/>
-     <DoughtnutChart/>
+      {/* <NewChart/> */}
+     {/* <BubbleChart/> */}
+    
      <PolarAreaChart/>
-     <RadarChart/>
-     <ScatterChart/>
+     {/* <RadarChart/> */}
+     {/* <ScatterChart/> */}
+     <DoughtnutChart/>
     </div>
   );
 }
