@@ -49,7 +49,7 @@ const NewChart = () => {
       };
   return (
     <div >
-        <h1 style={{color:"blueviolet"}}>Line Chart Presentation</h1>
+        <h1 style={{color:"blueviolet",width:"80%"}}>Line Chart Presentation</h1>
         <Line data={Data}/>
     </div>
   )

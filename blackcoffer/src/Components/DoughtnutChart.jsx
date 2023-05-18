@@ -51,7 +51,7 @@ const DoughtnutChart = () => {
     };
   return (
     <div>
-         <h1 style={{color:"blueviolet"}}>Doughnut Chart Presentation</h1>
+         <h1 style={{color:"blueviolet",width:"80%"}}>Doughnut Chart Presentation</h1>
       <Doughnut data={Data} />
     </div>
   )

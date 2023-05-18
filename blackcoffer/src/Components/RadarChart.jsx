@@ -48,8 +48,8 @@ const RadarChart = () => {
       ],
     };
   return (
-    <div>
-    <h1 style={{color:"blueviolet"}}>Radar Chart Presentation</h1>
+    <div style={{width:"60%",margin:"auto"}}>
+    <h1 style={{color:"blueviolet"}} >Radar Chart Presentation</h1>
  <Radar data={Data} />
 </div>
   )

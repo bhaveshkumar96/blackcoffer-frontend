@@ -51,7 +51,7 @@ const BubbleChart = () => {
       };
   return (
 <div>
-         <h1 style={{color:"blueviolet"}}>Bubble Chart Presentation</h1>
+         <h1 style={{color:"blueviolet",width:"100%"}}>Bubble Chart Presentation</h1>
       <Bubble data={Data} />
     </div>
   )

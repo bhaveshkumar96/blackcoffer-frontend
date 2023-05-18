@@ -48,8 +48,8 @@ const ScatterChart = () => {
       ],
     };
   return (
-    <div>
-    <h1 style={{color:"blueviolet"}}>Polar area Chart Presentation</h1>
+    <div style={{width:"80%"}}>
+    <h1 style={{color:"blueviolet"}}>Scatter Chart Presentation</h1>
  <Scatter data={Data} />
 </div>
   )

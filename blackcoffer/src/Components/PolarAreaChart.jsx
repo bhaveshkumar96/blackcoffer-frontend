@@ -49,7 +49,7 @@ const PolarAreaChart = () => {
     };
   return (
     <div>
-    <h1 style={{color:"blueviolet"}}>Polar area Chart Presentation</h1>
+    <h1 style={{color:"blueviolet",width:"80%"}}>Polar area Chart Presentation</h1>
  <PolarArea data={Data} />
 </div>
   )

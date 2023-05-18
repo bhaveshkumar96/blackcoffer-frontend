@@ -52,7 +52,7 @@ const BarChart = () => {
       };
   return (
     <div>
-         <h1 style={{color:"blueviolet"}}>Bar Chart Presentation</h1>
+         <h1 style={{color:"blueviolet",width:"80%"}}>Bar Chart Presentation</h1>
       <Bar data={Data} />
     </div>
   );
