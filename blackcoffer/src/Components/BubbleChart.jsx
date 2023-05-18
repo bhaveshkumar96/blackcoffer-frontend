@@ -10,15 +10,15 @@ const BubbleChart = () => {
     }, []);
     const getData = () => {
       axios
-        .get("https://blackcoffer-backend-production-3ed6.up.railway.app/data")
+        .get("https://blackcoffer-backend-production-3ed6.up.railway.app/data?page=1&limit=10")
         .then((res) => {
-          setDataa(res.data)
+          setDataa(res.data.data)
           //console.log(res.data)
       })
         .catch((err) => console.log(err));
     };
     const labels = dataa.map((el)=>{
-        return  el.topic 
+        return  el.source 
       });
       const Data = {
         labels: labels,
@@ -50,7 +50,16 @@ const BubbleChart = () => {
         ],
       };
   return (
-<div>
+<div
+      style={{
+        width: "50%",
+        border: "1px solid pink",
+        margin: "auto",
+        padding: "0px 50px 0px 50px",
+        borderRadius: "5%",
+        marginTop: "50px",
+      }}
+    >
          <h1 style={{color:"blueviolet",width:"100%"}}>Bubble Chart Presentation</h1>
       <Bubble data={Data} />
     </div>
